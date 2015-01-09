@@ -3,9 +3,7 @@ package main;
 /**
  * Created by YuQiu on 09/01/15.
  */
-public class Franc {
-
-    private int amount;
+public class Franc extends Money {
 
     public Franc(int amount) {
         this.amount = amount;
@@ -13,11 +11,6 @@ public class Franc {
 
     public Franc times(int multiplier){
         return new Franc(amount*multiplier);
-    }
-
-    public boolean equals(Object object){
-        Franc Franc = (Franc) object;
-        return amount == Franc.amount;
     }
 
 }
